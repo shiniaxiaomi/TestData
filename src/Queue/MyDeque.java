@@ -10,5 +10,5 @@ public interface MyDeque extends MyQueue {
 
     //头部的添加和获取操作
     public void addFirst(int value) throws Exception;
-    public int getFirst();
+    public int getFirst() throws Exception;
 }
