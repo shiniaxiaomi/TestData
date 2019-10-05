@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 
 //计算数独
-public class Main {
+public class Main5 {
 
     public void print(int[][] arr){
         for(int i=0;i<arr.length;i++){
@@ -108,7 +108,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Main main = new Main();
+        Main5 main = new Main5();
 
         int[][] arr=new int[9][9];
         while (scanner.hasNext()){
