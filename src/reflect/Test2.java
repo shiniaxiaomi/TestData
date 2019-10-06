@@ -13,6 +13,9 @@ public class Test2 {
         student.setName("jack");
         student.hello("nihao");
 
+        //通过反射调用方法
+        Method hello = aClass.getMethod("hello", String.class);
+        hello.invoke(student,"I love you!");
 
         //获取所有公共字段
         Field[] fields = aClass.getFields();
@@ -25,6 +28,7 @@ public class Test2 {
             System.out.println(declaredField.toString());
         }
 
+
         //获取所有公共方法
         Method[] methods = aClass.getMethods();
         for (Method method : methods) {
@@ -35,5 +39,8 @@ public class Test2 {
         for (Method declaredMethod : declaredMethods) {
             System.out.println(declaredMethod.toString());
         }
+
+
+
     }
 }
